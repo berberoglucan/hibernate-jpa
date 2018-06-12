@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+
+	<persistence-unit name="employeePersistence" transaction-type="RESOURCE_LOCAL">
+	
+
+		<class>_00.model.Employee</class>
+		<class>_00.model.Product</class>
+		<class>_00.model.Book</class>
+		
+		
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/hibernate?serverTimezone=UTC" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="123456" />
+
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+				
+			<property name="hibernate.hbm2ddl.auto" value="create"/>
+			<!-- <property name="hibernate.hbm2ddl.auto" value="update"/> -->
+
+			<property name="current_session_context_class" value="thread" />
+
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			 
+			<!-- C3P0 ConnectionProvider -->
+			<property name="hibernate.connection.provider_class" value="org.hibernate.connection.C3P0ConnectionProvider"/>
+			<!-- min connection size -->
+			<property name="hibernate.c3p0.min_size" value="5"/>
+			
+			<!-- max connection size -->
+			<property name="hibernate.c3p0.max_size" value="20"/>
+			
+			<!-- baglanti yetmediginde yeni 20 baglanti daha olusturur -->
+			 <property name="hibernate.c3p0.acquire_increment" value="20"/> 
+			
+			<!-- max 30 connection cachelenmesi -->
+			<property name="hibernate.c3p0.max_statements" value="30"/>
+			
+			<!-- su kadar sure sonra kullanilmayan baglantilari kapat -->
+			<property name="hibernate.c3p0.timeout" value="600"/>
+			
+			<!-- baglantilarin kullanilabilip kullanilmadigini kontrol eder -->
+			<property name="hibernate.c3p0.idle_test_period" value="1000"/> 
+
+		</properties>
+
+	</persistence-unit>
+
+</persistence>
