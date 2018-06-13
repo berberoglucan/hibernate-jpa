@@ -11,10 +11,16 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
 		<class>_00.model.Employee</class>
 		<class>_00.model.Product</class>
 		<class>_00.model.Book</class>
-		
+		<class>_07.generatedvalue.Student</class>
+		<class>_08.embeddable.User</class>
+		<class>_09.elementCollection.Personel</class>
+		<class>_10.elementCollection2.User</class>
+		<class>_11.elementCollection.map.Personel</class>
+		<class>_12.elementCollection.map2.Personel</class>
 		
 		<properties>
-			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<!--  <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" /> -->
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/hibernate?serverTimezone=UTC" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="123456" />
