@@ -16,7 +16,7 @@ import javax.persistence.MapKeyColumn;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@Entity
+//@Entity
 public class Personel {
 
 	@Id

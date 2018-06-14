@@ -2,7 +2,7 @@ package _08.embeddable;
 
 import javax.persistence.Embeddable;
 
-@Embeddable
+//@Embeddable
 public class Contact {
 
 	private String phoneNumber;

@@ -9,7 +9,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@Entity
+//@Entity
 @Table(name = "book")
 public class Book {
 

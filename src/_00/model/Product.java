@@ -8,7 +8,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@Entity
+//@Entity
 @Table(name = "product")
 public class Product {
 

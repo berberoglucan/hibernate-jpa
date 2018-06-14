@@ -2,7 +2,7 @@ package _10.elementCollection.list2;
 
 import javax.persistence.Embeddable;
 
-@Embeddable
+//@Embeddable
 public class Adress {
 
 	// @Column(name = "sehir")
